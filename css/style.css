@@ -1363,7 +1363,7 @@ img {
   height: 2.5rem;
   border-radius: var(--radius-md);
   background-color: rgba(255, 255, 255, 0.08);
-  color: #94A3B8;
+  color: #CBD5E1;
   transition: var(--transition-normal);
 }
 
@@ -1373,7 +1373,8 @@ img {
   transform: translateY(-2px);
 }
 
-.footer__social-link i {
+.footer__social-link i,
+.footer__social-link svg {
   width: 1.125rem;
   height: 1.125rem;
 }
@@ -1398,7 +1399,7 @@ img {
 }
 
 .footer__link:hover {
-  color: var(--primary);
+  color: var(--surface);
 }
 
 .footer__bottom {
