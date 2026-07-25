@@ -12,7 +12,7 @@ Add one or two screenshots here after uploading them to the repository.
 
 Example:
 
-![Homepage](./preview.png)
+![Homepage](./Preview/Homepage.png)
 
 ## ✨ Features
 
