@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(Get-ChildItem -Path \"d:\\\\Project\\\\NorthPeak-Digital\" -Filter \"*.html,*.css,*.js\")",
-      "Bash(Select-Object Name, Length)",
-      "PowerShell(Get-ChildItem -Path \"d:\\\\Project\\\\NorthPeak-Digital\" | Where-Object {$_.Name -match '\\\\.\\(html|css|js\\)$'})"
-    ]
-  }
-}
