@@ -1,0 +1,304 @@
+/* ========================================
+   Responsive Media Query Placeholders
+   ======================================== */
+
+/* ========================================
+   Desktop Styles
+   ======================================== */
+@media (min-width: 1024px) {
+  /* Desktop styles will be added here */
+}
+
+/* ========================================
+   Tablet Styles
+   ======================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Tablet styles will be added here */
+
+  .navbar__links {
+    gap: 1.5rem;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: var(--font-size-4xl);
+  }
+
+  .hero__description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+  }
+
+  .hero__stats {
+    justify-content: center;
+  }
+
+  .hero__illustration {
+    margin-top: 2rem;
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   Mobile Styles
+   ======================================== */
+@media (max-width: 767px) {
+  .navbar {
+    background-color: var(--surface);
+  }
+
+  .navbar__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--surface);
+    padding: 0;
+    box-shadow: var(--shadow-lg);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal);
+    z-index: 100;
+  }
+
+  .navbar__nav--open {
+    max-height: 500px;
+    padding: 1rem;
+  }
+
+  .navbar__links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .navbar__cta {
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__link--active::before {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+  }
+
+  .hero__stats {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .hero__dashboard {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .hero__widget {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .hero__widget-kpi-value {
+    font-size: var(--font-size-base);
+  }
+
+  .trusted-by__logos {
+    gap: 1.5rem;
+  }
+
+  .services__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   Responsive - Why Choose Us, Testimonials, Pricing
+   ======================================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .why-choose-us__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-choose-us__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .pricing__grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .pricing__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .pricing__card--featured {
+    transform: none;
+  }
+
+  .pricing__card--featured:hover {
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 767px) {
+  .why-choose-us__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-choose-us__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .pricing__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .pricing__card--featured {
+    transform: none;
+  }
+
+  .pricing__card--featured:hover {
+    transform: translateY(-8px);
+  }
+}
+
+/* ========================================
+   Responsive - Contact Section, Footer
+   ======================================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer__brand {
+    grid-column: span 2;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact__form {
+    padding: 1.5rem;
+  }
+
+  .contact__form-submit {
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer__logo {
+    justify-content: center;
+  }
+
+  .footer__description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
