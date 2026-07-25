@@ -66,11 +66,6 @@ const navbarModule = (function() {
 
     // Handle nav link clicks (mobile)
     handleNavLinkClick();
-
-    // Initialize Lucide icons
-    if (typeof lucide !== 'undefined') {
-      lucide.createIcons();
-    }
   }
 
   // Public API
@@ -222,15 +217,10 @@ const contactFormModule = (function() {
     toast.setAttribute('role', 'status');
     toast.setAttribute('aria-live', 'polite');
     toast.innerHTML =
-      '<i data-lucide="check-circle" class="contact__success-icon" aria-hidden="true"></i>' +
+      '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact__success-icon" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>' +
       '<span class="contact__success-text">Thank you! Your message has been received.</span>';
 
     document.body.appendChild(toast);
-
-    // Re-initialize Lucide icons for the new element
-    if (typeof lucide !== 'undefined') {
-      lucide.createIcons();
-    }
 
     // Trigger slide-in (allow DOM paint before adding visible class)
     requestAnimationFrame(function() {
